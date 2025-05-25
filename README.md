@@ -16,15 +16,9 @@ To write a Python program using **NumPy** that finds the indices where elements 
 
 ```
 import numpy as np
-
-# Define arrays
 x = np.array([5, 8, 2, 9, 6])
 y = np.array([3, 8, 4, 7, 6])
-
-# Find indices where x >= y
 indices = np.where(x >= y)
-
-# Display result
 print("Array x:", x)
 print("Array y:", y)
 print("Indices where x >= y:", indices[0])
@@ -56,11 +50,7 @@ import numpy as np
 arr = np.array([[12, 5, 7],
                 [4, 8, 6],
                 [9, 3, 1]])
-
-# Column-wise sort (axis=0)
 sorted_arr = np.sort(arr, axis=0)
-
-# Display output
 print("Original Array:\n", arr)
 print("Column-wise Sorted Array:\n", sorted_arr)
 
